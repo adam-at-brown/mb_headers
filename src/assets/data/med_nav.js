@@ -6,7 +6,7 @@ const data = [
   {
     navListbottom: [
       {
-        name: "Student",
+        name: "Med Student",
         children: [
           {
             name: "Find a Researcher",
@@ -82,7 +82,7 @@ const data = [
         ]
       },
       {
-        name: "Dinning",
+        name: "Dining",
         children: [
           {
             name: "Featured Events",

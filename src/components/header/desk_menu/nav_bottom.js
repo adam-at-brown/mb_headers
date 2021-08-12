@@ -45,7 +45,7 @@ const NavList = styled.div`
   justify-content: space-between;
   font-size: 14px;
   text-align: center;
-  margin: 0;
+  margin:  0;
   visibility: ${props => (props.show ? "hidden" : "visible")};
   height: ${props => (props.show ? "0" : "100%")};
   margin-top: 1rem;
@@ -85,6 +85,7 @@ const Search = styled.a`
   height: 40px;
   border-radius: 50%;
   margin-top: -5px;
+  margin-left: 10px;
 `;
 
 const SearchIcon = styled(SearchSVG)`

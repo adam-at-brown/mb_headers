@@ -19,7 +19,7 @@ export default function MobileSubNav({ data, show }) {
   return (
     <NavList show={show}>
       {data[1].navListbottom.map((item, index) => {
-        return (
+        return (<>{item.name !== "" &&
           <Btn type="button" key={item.name} onClick={() => handleClick(index)}>
             <TitleWrap active={open === index}>
               <Title index={index} active={open === index}>
@@ -44,7 +44,7 @@ export default function MobileSubNav({ data, show }) {
               })}
             </ul>
           </Btn>
-        );
+        }</>);
       })}
       <br />
       <p
