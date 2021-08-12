@@ -2,13 +2,13 @@ import * as React from "react"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import data from "../assets/data/staff_nav";
+import data from "../assets/data/alumni_nav";
 
-const IndexPage = () => (
+const Alumni = () => (
   <Layout>
-    <Seo title="Staff" />
+    <Seo title="Alumni Only" />
     <Header data={data} />
   </Layout>
 )
 
-export default IndexPage
+export default Alumni

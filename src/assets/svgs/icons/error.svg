@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 26">
+  <g stroke-width="1" fill-rule="evenodd">
+    <g transform="translate(-1001.000000, -103.000000)">
+      <g transform="translate(988.000000, 16.000000)">
+        <g transform="translate(0.000000, 70.000000)">
+          <polygon points="30.5 17 48 43 13 43"></polygon>
+          <path d="M32.446,26.238 L31.87,35.112 L30.124,35.112 L29.548,26.238 L32.446,26.238 Z M29.584,37.722 C29.584,36.93 30.214,36.282 30.988,36.282 C31.78,36.282 32.428,36.93 32.428,37.722 C32.428,38.514 31.78,39.144 30.988,39.144 C30.214,39.144 29.584,38.514 29.584,37.722 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
