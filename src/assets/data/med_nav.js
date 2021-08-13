@@ -9,16 +9,16 @@ const data = [
         name: "Med Student",
         children: [
           {
-            name: "Find a Researcher",
-            link: "https://vivo.brown.edu/"
+            name: "Test 1",
+            link: "/med/test_page1"
           },
           {
-            name: "Industry Engagement",
-            link: "https://www.brown.edu/research/industry-engagement"
+            name: "Another Page",
+            link: "/med/test_page1"
           },
           {
-            name: "Conducting Research at Brown",
-            link: "https://www.brown.edu/research/conducting-research-brown"
+            name: "Sub Page 3",
+            link: "/med/test_page1"
           }
         ]
       },
