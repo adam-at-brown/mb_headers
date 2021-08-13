@@ -3,9 +3,18 @@ import styled from "styled-components"
 import { FONTS, COLORS, MEDIA } from "../shared";
 
 const data = [
-  "Test 1",
-  "Another Page",
-  "Sub Page 3"
+  {
+    name: "Test 1",
+    link: "/med/test_page1"
+  },
+  {
+    name: "Another Page",
+    link: "/med/another-page"
+  },
+  {
+    name: "Sub Page 3",
+    link: "/med/sub-page3"
+  }
 ]
 
 export default function SubHeader() {
@@ -14,7 +23,7 @@ export default function SubHeader() {
       {
         data.map(i => {
           return(
-          <P key={i} href="#">{i}</P>)})
+          <P key={i.name} href={i.link}>{i.name}</P>)})
       }
     </Container>
   )

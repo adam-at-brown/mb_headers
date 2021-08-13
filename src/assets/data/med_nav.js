@@ -14,11 +14,11 @@ const data = [
           },
           {
             name: "Another Page",
-            link: "/med/test_page1"
+            link: "/med/another-page"
           },
           {
             name: "Sub Page 3",
-            link: "/med/test_page1"
+            link: "/med/sub-page3"
           }
         ]
       },
