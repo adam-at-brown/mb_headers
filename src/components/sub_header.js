@@ -19,17 +19,29 @@ const data = [
 
 export default function SubHeader() {
   return (
-    <Container>
-      {
-        data.map(i => {
-          return(
-          <P key={i.name} href={i.link}>{i.name}</P>)})
-      }
-    </Container>
+    <Wapper>
+      <Container>
+        {
+          data.map(i => {
+            return(
+            <P key={i.name} href={i.link}>{i.name}</P>)})
+        }
+      </Container>
+    </Wapper>
   )
 }
 
 const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: ${COLORS.red};
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+`
+
+const Wapper = styled.div`
   height: 100px;
   width: 100%;
   padding:  160px 4rem 1rem 4rem;
@@ -37,11 +49,11 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${COLORS.red};
-  padding-top: 160px;
 `
 
 const P = styled.a`
   ${FONTS.CircularStd}
   color: white;
-  margin-bottom: 1.45rem;
+  margin-bottom: .8rem;
+  margin-top: -19px;
 `
