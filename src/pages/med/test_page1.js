@@ -9,7 +9,7 @@ const MedTest1 = () => (
   <Layout>
     <Seo title="Medical Student | Test Page 1" />
     <Header data={data} />
-    <SubHeader />
+    <SubHeader page="/med/test_page1/" />
   </Layout>
 )
 
