@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby"
 import { bool, instanceOf, string, func } from "prop-types";
 import styled from "styled-components";
+import { ChevronDownSVG } from "../../../assets/svgs/icons";
 import { FONTS, COLORS, MEDIA } from "../../../shared";
 import SubNav from "../components/sub_nav";
 
@@ -10,14 +11,24 @@ export default function NavTop({ data, show, activeMenu, setActiveMenu }) {
     <Nav>
       <NavList show={show}>
         <Give>
-          <Link to="/">My Dashboard</Link>
+          <Link to="/">Dashboard</Link>
         </Give>
         <Span>
           <Link to="/">Feedback</Link>
         </Span>
-        <Span>
-          <Link to="/">Profile</Link>
-        </Span>
+        {data && data[0].navListTop.map(item => {
+          return item.children ? (
+            <SubNav
+              links={item}
+              key={item.name}
+              activeMenu={activeMenu}
+              setActiveMenu={setActiveMenu}
+              bold
+            />
+          ) : (
+            ""
+          );
+        })}
       </NavList>
     </Nav>
   );
@@ -45,6 +56,7 @@ export const Span = styled.span`
   ${FONTS.CircularStd}
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0 10px;
 
   a {
     color: inherit;

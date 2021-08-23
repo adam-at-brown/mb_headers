@@ -5,7 +5,7 @@ import Logo from "./components/logo";
 import DesktopMenu from "./desk_menu";
 import MobileMenu from "./mobile_menu";
 
-export default function Headrer({ data }) {
+export default function Header({ data }) {
   const [scrollMark, setScrollMark] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
 

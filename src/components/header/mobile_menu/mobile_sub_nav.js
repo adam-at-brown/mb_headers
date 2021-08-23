@@ -35,7 +35,7 @@ export default function MobileSubNav({ data, show }) {
                 margin: 0;
               `}
             >
-              {item.children.map(child => {
+              {item.children?.map(child => {
                 return (
                   <LI key={child.name} open={open === index}>
                     <Link href={child.link}>{child.name}</Link>

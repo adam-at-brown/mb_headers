@@ -29,7 +29,7 @@ export default function SubNav({ links, activeMenu, setActiveMenu }) {
       role="navigation"
       aria-label={`${name} menu`}
     >
-      {links.name === "For You" ? (
+      {links.name === "Spaces" ? (
         <LI
           onMouseEnter={() => setBounce(true)}
           onMouseLeave={() => setBounce(false)}

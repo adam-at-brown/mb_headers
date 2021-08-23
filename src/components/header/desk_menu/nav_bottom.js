@@ -1,9 +1,10 @@
 import React from "react";
 import { instanceOf, string, func } from "prop-types";
 import styled from "styled-components";
-import { SearchSVG } from "../../../assets/svgs/icons";
+import { SearchSVG, PersonSVG } from "../../../assets/svgs/icons";
 import { COLORS } from "../../../shared";
 import SubNav from "../components/sub_nav";
+import {Span} from "./nav_top";
 
 export default function NavBottom({ data, activeMenu, setActiveMenu }) {
   return (
@@ -25,6 +26,9 @@ export default function NavBottom({ data, activeMenu, setActiveMenu }) {
             </Span>
           );
         })}
+        <Profile>
+          <ProfileIcon />
+        </Profile>
         <Search
           href="https://www.brown.edu/search?q="
           aria-label="Search Page"
@@ -52,32 +56,32 @@ const NavList = styled.div`
   width: 100%;
 `;
 
-const Span = styled.span`
-  letter-spacing: 1.2px;
-  font-style: italic;
-
-  a {
-    color: inherit;
-    transition: color 0.25s;
-
-    &:hover {
-      color: ${COLORS.red};
-    }
-  }
-
-  &:after {
-    content: "";
-    display: block;
-    width: 0%;
-    margin-top: -5px;
-    border-bottom: 1.5px solid black;
-    transition: 0.5s;
-  }
-
-  &:hover:after {
-    width: 100%;
-  }
-`;
+// const Span = styled.span`
+//   letter-spacing: 1.2px;
+//   font-style: italic;
+//
+//   a {
+//     color: inherit;
+//     transition: color 0.25s;
+//
+//     &:hover {
+//       color: ${COLORS.red};
+//     }
+//   }
+//
+//   &:after {
+//     content: "";
+//     display: block;
+//     width: 0%;
+//     margin-top: -5px;
+//     border-bottom: 1.5px solid black;
+//     transition: 0.5s;
+//   }
+//
+//   &:hover:after {
+//     width: 100%;
+//   }
+// `;
 
 const Search = styled.a`
   background-color: ${COLORS.red};
@@ -92,6 +96,22 @@ const SearchIcon = styled(SearchSVG)`
   width: 15px;
   fill: white;
   margin-top: 12px;
+`;
+
+const Profile = styled.a`
+  background-color: ${COLORS.greyLight};
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-left: 10px;
+`;
+
+const ProfileIcon = styled(PersonSVG)`
+width: 15px;
+fill: dimgrey;
+margin-top: 13px;
+margin-left: 1px;
 `;
 
 NavBottom.propTypes = {

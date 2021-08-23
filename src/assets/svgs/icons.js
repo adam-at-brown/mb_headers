@@ -45,3 +45,4 @@ export { default as DraggableSVG } from "./icons/draggable.svg";
 export { default as ErrorSVG } from "./icons/error.svg";
 export { default as FilterSVG } from "./icons/filter.svg";
 export { default as ListSearchSVG } from "./icons/list-search.svg";
+export { default as PersonSVG } from "./icons/person.svg";
