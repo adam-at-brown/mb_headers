@@ -44,7 +44,7 @@ const Container = styled.div`
 const Wapper = styled.div`
   height: 100px;
   width: 100%;
-  padding:  160px 4rem 0.2rem 4rem;
+  padding:  160px 0rem 0.2rem 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
