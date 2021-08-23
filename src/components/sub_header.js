@@ -34,8 +34,8 @@ export default function SubHeader({ page }) {
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -44,7 +44,7 @@ const Container = styled.div`
 const Wapper = styled.div`
   height: 100px;
   width: 100%;
-  padding:  160px 4rem 1rem 4rem;
+  padding:  160px 4rem 0.2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,11 +53,10 @@ const Wapper = styled.div`
 
 const P = styled.a`
   ${FONTS.CircularStd}
-  color: ${props => props.active ? COLORS.brownDark : COLORS.brownDark };
-  margin-top: -25px;
-  background-color: ${props => props.active ? COLORS.gold : "transparent" };
+  color: ${props => props.active ? COLORS.brownDark : "white" };
+  margin-top: -30px;
+  background-color: ${props => props.active ? COLORS.gold : COLORS.brownDark };
   padding: 5px 1rem;
   border-radius: 5px;
-  outline: 1px solid ${props => props.active ? "transparent" : "rgba(255,255,255,0.5)"};
-  outline-offset: 1px;
+  border: 1px solid ${props => props.active ? "transparent" : "rgba(255,255,255,0.5)"};
 `
