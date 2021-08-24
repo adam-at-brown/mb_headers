@@ -26,7 +26,9 @@ const LogoWrap = styled(Link)`
 const Image = styled.div`
   transition: width 0.5s;
   width: ${props => props.size}px;
-  margin: 0 auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
 
   svg {
     width: 100%;
