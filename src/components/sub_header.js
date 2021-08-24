@@ -49,14 +49,14 @@ const Wapper = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${COLORS.brownLight};
+  border-bottom: 5px solid ${COLORS.gold}
 `
 
 const P = styled.a`
   ${FONTS.CircularStd}
   color: ${props => props.active ? COLORS.brownDark : "white" };
-  margin-top: -30px;
   background-color: ${props => props.active ? COLORS.gold : COLORS.brownDark };
   padding: 5px 1rem;
-  border-radius: 5px;
-  border: 1px solid ${props => props.active ? "transparent" : "rgba(255,255,255,0.5)"};
+  border-radius: 5px 20px 0 0;
+  margin-top: -28px;
 `
