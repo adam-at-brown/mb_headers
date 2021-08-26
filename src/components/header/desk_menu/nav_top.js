@@ -72,7 +72,7 @@ export const Span = styled.span`
     display: block;
     width: 0%;
     margin-top: -5px;
-    border-bottom: 1.5px solid black;
+    border-bottom: 2.5px solid ${COLORS.brownDark};
     transition: 0.5s;
   }
 
