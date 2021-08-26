@@ -5,7 +5,7 @@ import Logo from "./components/logo";
 import DesktopMenu from "./desk_menu";
 import MobileMenu from "./mobile_menu";
 
-export default function Header({ data }) {
+export default function Header({ data, page }) {
   const [scrollMark, setScrollMark] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
 
@@ -32,6 +32,7 @@ export default function Header({ data }) {
           show={show}
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
+          page={page}
         />
         <MobileMenu
           data={data}

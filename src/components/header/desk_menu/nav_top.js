@@ -62,6 +62,8 @@ export const Span = styled.span`
   a {
     color: inherit;
     transition: color 0.25s;
+    color: ${props => props.active ? COLORS.red : "inherit"};
+    border-bottom: 2.5px solid ${props => props.active ? COLORS.brownDark : "transparent"};
 
     &:hover {
       color: ${COLORS.red};
@@ -73,7 +75,7 @@ export const Span = styled.span`
     display: block;
     width: 0%;
     margin-top: -5px;
-    border-bottom: 2.5px solid ${COLORS.brownDark};
+    border-bottom: 2.5px solid ${props => props.active ? "transparent" : COLORS.brown };
     transition: 0.5s;
   }
 

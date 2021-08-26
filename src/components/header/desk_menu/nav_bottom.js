@@ -1,12 +1,13 @@
 import React from "react";
 import { instanceOf, string, func } from "prop-types";
+import { Link } from "gatsby";
 import styled from "styled-components";
 import { SearchSVG, PersonSVG } from "../../../assets/svgs/icons";
 import { COLORS } from "../../../shared";
 import SubNav from "../components/sub_nav";
 import {Span} from "./nav_top";
 
-export default function NavBottom({ data, activeMenu, setActiveMenu }) {
+export default function NavBottom({ data, activeMenu, setActiveMenu, page }) {
   return (
     <nav>
       <NavList>
@@ -21,8 +22,8 @@ export default function NavBottom({ data, activeMenu, setActiveMenu }) {
               setActiveMenu={setActiveMenu}
             />
           ) : (
-            <Span key={name}>
-              <a href={link}>{name}</a>
+            <Span key={name} active={page === name}>
+              <Link to={link}>{name}</Link>
             </Span>
           );
         })}

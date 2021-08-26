@@ -5,7 +5,7 @@ import NavTop from "./nav_top";
 import NavBottom from "./nav_bottom";
 import { MEDIA } from "../../../shared";
 
-export default function DeskMenu({ data, show, activeMenu, setActiveMenu }) {
+export default function DeskMenu({ data, show, activeMenu, setActiveMenu, page }) {
   return (
     <NavWrap>
       <NavTop
@@ -18,6 +18,7 @@ export default function DeskMenu({ data, show, activeMenu, setActiveMenu }) {
         data={data}
         activeMenu={activeMenu}
         setActiveMenu={setActiveMenu}
+        page={page}
       />
     </NavWrap>
   );

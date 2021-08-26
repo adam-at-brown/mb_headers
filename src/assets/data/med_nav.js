@@ -99,6 +99,7 @@ const data = [
       },
       {
         name: "Today@Brown",
+        link: "/tab"
         // children: [
         //   {
         //     name: "Featured Events",
