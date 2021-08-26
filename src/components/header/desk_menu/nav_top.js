@@ -52,7 +52,8 @@ const NavList = styled.div`
 `;
 
 export const Span = styled.span`
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
+  font-size: 16px;
   ${FONTS.CircularStd}
   text-transform: uppercase;
   font-weight: 700;

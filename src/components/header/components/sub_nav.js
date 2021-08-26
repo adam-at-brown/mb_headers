@@ -94,14 +94,14 @@ const ChevBounce = styled.span`
 const Nav = styled.ul`
   position: absolute;
   background-color: #fff;
-  min-width: 300px;
+  min-width: 250px;
   z-index: 2;
   display: ${props => (props.show ? "flex" : "none")};
   flex-direction: column;
   list-style: none;
   border: 1px solid ${COLORS.greyLight};
   text-align: left;
-  left: -100px;
+  left: -75px;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
     0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
     0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
@@ -127,7 +127,7 @@ const Btn = styled.button`
 
 const A = styled.a`
   border-bottom: 1px solid ${COLORS.greyLight};
-  padding: 1rem 3rem 1rem 1rem;
+  padding: 0.8rem;
   margin-bottom: 0;
   ${FONTS.CircularStd};
   ${FONTS.bold}
@@ -147,6 +147,8 @@ const LI = styled.p`
   ${FONTS.bold};
   ${FONTS.CircularStd};
   margin: 0 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
 
   ${MEDIA.smallScreen} {
     font-size: 12px;
